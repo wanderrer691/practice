@@ -1,0 +1,51 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Piano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-menu">
+    <h1>🎹 Virtual Piano</h1>
+    <img src="piano-kei.png" alt="Клавиши фортепиано"width="700" height="350">
+    <br>
+    <button onclick="location.href='free-play.html'">🆓Свободная игра</button>
+    <button onclick="location.href='learning.html'">🏰Обучение</button>
+    <button onclick="location.href='settings.html'">⚙ Настройки</button>
+  </div>
+
+<section id="feedbackSection" class="feedback-section">
+  <h2>📬 Обратная связь</h2>
+  <form id="feedbackForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+
+    <label for="instrument">Любимый инструмент:</label>
+    <select id="instrument">
+      <option value="piano">Фортепиано</option>
+      <option value="violin">Скрипка</option>
+      <option value="guitar">Гитара</option>
+      <option value="drums">Барабаны</option>
+    </select>
+
+    <label for="comment">Комментарий:</label>
+    <textarea id="comment" rows="3"></textarea>
+
+    <label>
+      <input type="checkbox" id="consent" />
+      Я согласен с политикой конфиденциальности
+    </label>
+<div class="button">
+    <button type="submit">Отправить</button>
+  </div>
+  </form>
+</section>
+
+<script src="script.js"></script>
+<script src="form.js"></script>    
+</body>
+</html>
