@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Настройки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+  <h2>Настройки</h2>
+  <label>Громкость: <input type="range" id="volume" min="0" max="1" step="0.01"></label><br>
+  <label><input type="checkbox" id="showNotes"> Показывать ноты</label><br>
+  <label>Цвет подсветки: <input type="color" id="highlightColor"></label><br>
+  <label>Инструмент: 
+    <select id="instrument">
+      <option value="piano">Piano</option>
+      <option value="organ">Organ</option>
+      <option value="synth">Synth</option>
+    </select>
+  </label><br>
+  <label>Эффект: 
+    <select id="effect">
+      <option value="none">Без эффекта</option>
+      <option value="reverb">Reverb</option>
+      <option value="echo">Echo</option>
+    </select>
+  </label><br>
+  <label><input type="checkbox" id="midi"> Подключить MIDI</label><br>
+  <label><input type="checkbox" id="theme"> Тёмная тема</label><br>
+  <button onclick="saveSettings()">✔Сохранить</button>
+  <button onclick="location.href='index.html'">🔙 Назад</button>
+  </div>
+</body>
+</html>
